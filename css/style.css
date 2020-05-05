@@ -256,6 +256,9 @@ body {
     padding-top: 15px;
     padding-bottom: 30px;
   }
+  .treino-item img {
+    margin: 0;
+  }
   .sobre-resumo {
     padding: 30px 0;
   }
