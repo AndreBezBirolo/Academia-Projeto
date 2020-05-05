@@ -145,7 +145,6 @@ body {
   color: var(--cor-texto-realce);
 }
 .treino-item img {
-  display: block;
   max-width: 100%;
   transition: all 200ms linear;
 }
@@ -209,6 +208,10 @@ body {
   }
   .bg-intro {
     max-width: 70%;
+  }
+  .sobre-resumo-img img {
+    display: block;
+    max-width: 100%;
   }
 }
 /* celular */
