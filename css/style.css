@@ -294,6 +294,9 @@ body {
     display: block;
     margin: 0 auto;
   }
+  .rodape ul {
+    float: none;
+  }
   .rodape li {
     float: none;
     margin-top: 10px;
@@ -301,5 +304,8 @@ body {
   }
   .rodape li:last-child a {
     padding-bottom: 0;
+  }
+  .menu-nav {
+    float: none;
   }
 }
