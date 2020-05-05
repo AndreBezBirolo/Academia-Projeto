@@ -48,6 +48,9 @@ body {
 }
 .menu-nav li {
   float: right;
+}
+.menu-nav li {
+  float: left;
   margin-top: 20px;
   padding-left: 35px;
 }
@@ -182,8 +185,11 @@ body {
 .logo-rodape {
   float: left;
 }
-.rodape li {
+.rodape ul {
   float: right;
+}
+.rodape li {
+  float: left;
   margin-top: 20px;
   padding-left: 35px;
 }
