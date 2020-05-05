@@ -1,12 +1,20 @@
 .sobre-principal {
     padding: 30px 0 0 0;
 }
+.sobre-principal img {
+    display: block;
+    max-width: 100%;
+}
 .profissional {
     margin-top: 30px;
 }
 .imagem-profissional {
     margin-left: 0;
     transition: all 200ms linear;
+}
+.imagem-profissional img {
+    display: block;
+    max-width: 100%;
 }
 .imagem-profissional:hover {
     transform: scale(1.1);
@@ -15,4 +23,30 @@
     font-size: 1.25em;
     font-weight: bold;
     color: var(--cor-bg-principal);
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+    .container {
+        max-width: 720px;
+    }
+
+}
+/* celular */
+@media (max-width: 739px) {
+    .container {
+        max-width: 300px;
+    }
+    .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .imagem-profissional:hover {
+        transform: none;
+    }
+    .profissional p {
+        padding-top: 10px;
+    }
+
 }
