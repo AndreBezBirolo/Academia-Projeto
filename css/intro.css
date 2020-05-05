@@ -1,0 +1,216 @@
+/* variaveis */
+body {
+    --cor-bg-principal: #1A1A1A;
+    --cor-bg-secundaria: rgba(26,26,26,0.9);
+    --cor-texto: #5B5B5B;
+    --cor-texto-op: rgba(255,255,255,0.7);
+    --cor-texto-realce: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--cor-bg-principal);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cor-texto);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-texto);
+}
+.btn, .btn-claro {
+    background-color: var(--cor-bg-principal);
+    color: var(--cor-texto-realce);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 30px;
+    transition: all 400ms linear;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--cor-texto-realce);
+    color: var(--cor-bg-principal);
+}
+.btn-claro:hover {
+    background-color: var(--cor-bg-secundaria);
+}
+/* header */
+.header {
+    background-color: var(--cor-bg-principal);
+}
+.menu-nav {
+    max-width: 100%;
+}
+.logo-header {
+    float: left;
+}
+.menu-nav {
+    float: right;
+}
+.menu-nav li {
+    float: left;
+    margin-top: 20px;
+    padding-left: 35px;
+}
+
+.menu-nav li a {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-family: Roboto, serif;
+    color: var(--cor-texto);
+}
+.opcao-ativa a {
+    color: var(--cor-texto-realce)!important;
+}
+.menu-nav a:hover {
+    color: var(--cor-texto-realce);
+}
+.selecionado {
+    color: var(--cor-texto-realce);
+}
+/* footer */
+.rodape {
+    margin-top: 60px;
+    background-color: var(--cor-bg-principal);
+    padding: 5px 0;
+}
+.logo-rodape {
+    float: left;
+}
+.rodape ul {
+    float: right;
+}
+.rodape li {
+    float: left;
+    margin-top: 20px;
+    padding-left: 35px;
+}
+.rodape li a {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-family: Roboto, serif;
+    color: var(--cor-texto);
+}
+.rodape li:last-child a {
+    font-size: 0.825em;
+}
+.rodape a:hover {
+    color: var(--cor-texto-realce);
+}
+/* sobre resumo */
+.sobre-resumo {
+    padding: 60px 0;
+}
+
+.sobre-resumo-info {
+    text-align: center;
+}
+.sobre-resumo-info h3 {
+    font-size: 2.25em;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-bg-principal);
+}
+.sobre-resumo-info p {
+    line-height: 25px;
+    max-width: 300px;
+    margin: 30px auto 40px;
+}
+/* introdução das páginas */
+.introducao-paginas {
+    background-image: url("../imagens/intro-paginas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+.introducao-paginas h4 {
+    font-size: 2.25em;
+    font-family: Roboto, serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cor-texto-realce);
+}
+/* celular */
+@media (min-width: 740px) and (max-width: 980px) {
+    .container {
+        max-width: 720px;
+    }
+    .sobre-resumo-img img {
+        display: block;
+        max-width: 100%;
+    }
+}
+/* celular */
+@media (max-width: 739px) {
+    .container {
+        max-width: 300px;
+    }
+    .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header {
+        text-align: center;
+    }
+    .logo-header {
+        float: none;
+        margin: 0 auto;
+    }
+    .menu-nav {
+        float: none;
+    }
+    .menu-nav li {
+        float: none;
+        margin-top: 15px;
+        padding-left: 0;
+    }
+    .menu-nav li:last-child {
+        margin-bottom: 15px;
+    }
+    .sobre-resumo {
+        padding: 30px 0;
+    }
+    .sobre-resumo-info h3 {
+        font-size: 2em;
+    }
+    .sobre-resumo-info p {
+        line-height: 20px;
+        margin: 15px auto 20px;
+    }
+    .sobre-resumo-img img {
+        display: block;
+        max-width: 100%;
+        padding-top: 20px;
+    }
+    .rodape {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .rodape ul {
+        float: none;
+    }
+    .logo-rodape {
+        float: none;
+    }
+    .logo-rodape img {
+        display: block;
+        margin: 0 auto;
+    }
+    .rodape li {
+        float: none;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+    .rodape li:last-child a {
+        padding-bottom: 0;
+    }
+}
