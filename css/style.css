@@ -24,6 +24,18 @@ body {
 .btn-claro:hover {
   background-color: var(--cor-bg-secundaria);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cor-bg-principal);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cor-texto);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-texto);
+}
 /* header */
 .header {
   background-color: var(--cor-bg-principal);
