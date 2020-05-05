@@ -1,0 +1,281 @@
+/* variaveis */
+body {
+  --cor-bg-principal: #1A1A1A;
+  --cor-bg-secundaria: rgba(26,26,26,0.9);
+  --cor-texto: #5B5B5B;
+  --cor-texto-op: rgba(255,255,255,0.7);
+  --cor-texto-realce: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn, .btn-claro {
+  background-color: var(--cor-bg-principal);
+  color: var(--cor-texto-realce);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 10px 30px;
+  transition: all 400ms linear;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--cor-texto-realce);
+  color: var(--cor-bg-principal);
+}
+.btn-claro:hover {
+  background-color: var(--cor-bg-secundaria);
+}
+/* header */
+.header {
+  background-color: var(--cor-bg-principal);
+}
+.menu-nav {
+  max-width: 100%;
+}
+.logo-header {
+  float: left;
+}
+.menu-nav li {
+  float: right;
+  margin-top: 20px;
+  padding-left: 35px;
+}
+.menu-nav li a {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-family: Roboto, serif;
+  color: var(--cor-texto);
+}
+.menu-nav a:hover {
+  color: var(--cor-texto-realce);
+}
+
+/* introdução */
+.bg-espaco {
+  padding: 78px 0;
+}
+.introducao {
+  display: block;
+  background-image: url("../imagens/intro-img.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.bg-intro {
+  background-color: var(--cor-bg-secundaria);
+  border-radius: 0 4px 4px 0;
+  max-width: 50%;
+}
+
+
+.texto-intro {
+  float: right;
+  text-align: center;
+  max-width: 300px;
+  padding: 25px 95px 35px 10%;
+}
+.bg-intro::after, .bg-intro::before{
+  content: '';
+  display: table;
+  clear: both;
+}
+.texto-intro h3 {
+  font-family: Roboto, serif;
+  color: var(--cor-texto-realce);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.texto-intro p {
+  margin: 60px 0;
+  color: var(--cor-texto-op);
+}
+.seta {
+  padding-left: 10px;
+}
+
+/* valores */
+.valores {
+  text-align: center;
+}
+.valores p {
+  margin: 25px auto 0 auto;
+  max-width: 350px;
+}
+
+.valores h3 {
+  margin: 60px 0 30px 0;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  font-family: Roboto, serif;
+}
+
+/* treinos e complementos */
+.treinos-e-complementos {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: var(--cor-bg-secundaria);
+  font-family: Roboto, serif;
+  text-align: center;
+}
+
+.treinos-e-complementos h3 {
+  text-transform: uppercase;
+  font-size: 2.25em;
+  margin-bottom: 30px;
+  color: var(--cor-texto-realce);
+}
+.treinos-e-complementos h4 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: var(--cor-texto-realce);
+}
+.treino-item img {
+  display: block;
+  max-width: 100%;
+  transition: all 200ms linear;
+}
+.treino-item:hover img {
+  transform: scale(1.1);
+}
+/* sobre resumo */
+.sobre-resumo {
+  padding: 60px 0;
+}
+
+.sobre-resumo-info {
+  text-align: center;
+}
+.sobre-resumo-info h3 {
+  font-size: 2.25em;
+  font-family: Roboto, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--cor-bg-principal);
+}
+.sobre-resumo-info p {
+  line-height: 25px;
+  max-width: 300px;
+  margin: 30px auto 40px;
+}
+
+/* footer */
+.rodape {
+  margin-top: 60px;
+  background-color: var(--cor-bg-principal);
+  padding: 5px 0;
+}
+
+.logo-rodape {
+  float: left;
+}
+.rodape li {
+  float: right;
+  margin-top: 20px;
+  padding-left: 35px;
+}
+.rodape li a {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-family: Roboto, serif;
+  color: var(--cor-texto);
+}
+.rodape li:last-child a {
+  font-size: 0.825em;
+}
+.rodape a:hover {
+  color: var(--cor-texto-realce);
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+  .container {
+    max-width: 720px;
+  }
+  .bg-intro {
+    max-width: 70%;
+  }
+}
+/* celular */
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header {
+    text-align: center;
+  }
+  .logo-header {
+    float: none;
+    margin: 0 auto;
+  }
+  .menu-nav li {
+    float: none;
+    margin-top: 15px;
+    padding-left: 0;
+  }
+  .menu-nav li:last-child {
+    margin-bottom: 15px;
+  }
+  .bg-intro {
+    max-width: 100%;
+  }
+  .texto-intro {
+    padding: 10px 20px 20px 20px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    max-width: none;
+  }
+  .valores h3 {
+    margin: 30px 0 15px 0;
+    font-size: 2em;
+  }
+  .treinos-e-complementos {
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .sobre-resumo {
+    padding: 30px 0;
+  }
+  .sobre-resumo-info h3 {
+    font-size: 2em;
+  }
+  .sobre-resumo-info p {
+    line-height: 20px;
+    margin: 15px auto 20px;
+  }
+  .sobre-resumo-img img {
+    display: block;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  .rodape {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .logo-rodape {
+    float: none;
+  }
+  .logo-rodape img {
+    display: block;
+    margin: 0 auto;
+  }
+  .rodape li {
+    float: none;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .rodape li:last-child a {
+    padding-bottom: 0;
+  }
+}
