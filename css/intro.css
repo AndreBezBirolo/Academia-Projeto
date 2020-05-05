@@ -137,7 +137,7 @@ body {
     text-align: center;
     color: var(--cor-texto-realce);
 }
-/* celular */
+/* tablet */
 @media (min-width: 740px) and (max-width: 980px) {
     .container {
         max-width: 720px;
